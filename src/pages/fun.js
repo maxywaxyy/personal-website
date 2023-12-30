@@ -5,10 +5,14 @@ import FunComp from "../components/funComp"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import soccer from '../images/soccerPhoto.jpg'
+import snowboard from '../images/snowboardPhoto.jpg'
+import origami from '../images/origamiPhoto.jpg'
+
 const entry = [
-    {image: 'pic', title: 'Soccer', descr: '2022: Adidas SoCal Tourney'},
-    {image: 'pic', title: 'Snowboarding', descr: '2023: Mammoth Mountain'},
-    {image: 'pic', title: 'Origami', descr: '2021: Japanese Culture Club'}
+    {image: soccer, title: 'Soccer', descr: '2022: Adidas ID Camp Prep'},
+    {image: snowboard, title: 'Snowboarding', descr: '2023: Mammoth Mountain'},
+    {image: origami, title: 'Origami', descr: '2021: Japanese Culture Club'}
 ];
 
 const Fun = () => (
