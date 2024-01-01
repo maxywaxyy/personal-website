@@ -93,15 +93,16 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
+      
       <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
+        src="../images/coverPhoto.jpg"
+        alt="cover photo corrupted"
+        placeholder="blurred"
+        width={200}
+        height={200}
+        className={styles.coverPhoto}
       />
+      
       <h1>
         Hello! this is <b>Max O7</b>
       </h1>
