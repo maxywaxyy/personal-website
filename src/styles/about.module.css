@@ -1,6 +1,13 @@
 /* about.js styles */
 .all{
     text-align: center;
+    margin: auto;
+    width: 80%;
+    /* to visualize box:
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgb(255, 48, 152);
+    */
 }
 
 .h1{
@@ -21,7 +28,6 @@
 .box{
     background-color:rgb(195, 145, 236);    
     border-width: 5px;
-    border-color: rgb(255, 48, 152);
     border-radius: 20px;
     padding: 15px;
     margin-left: 20px;
@@ -37,7 +43,7 @@
 }
 
 .title{
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: -10px;
 }
 
