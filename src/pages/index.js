@@ -24,19 +24,19 @@ const IndexPage = () => (
       <p></p>
       <Grow
             in='true'
-            {...('true' ? { timeout: 3000 } : {})}
+            {...('true' ? { timeout: 2000 } : {})}
         >
           <p className={styles.hello}>Hello! </p>
       </Grow>
       <Grow
             in='true'
-            {...('true' ? { timeout: 4000 } : {})}
+            {...('true' ? { timeout: 3000 } : {})}
         >
           <p className={styles.thisIs}>My name is </p>
       </Grow>
       <Grow
             in='true'
-            {...('true' ? { timeout: 6000 } : {})}
+            {...('true' ? { timeout: 5000 } : {})}
         >
           <h1><b className={styles.max}>MAX</b></h1>
       </Grow>

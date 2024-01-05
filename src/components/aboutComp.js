@@ -8,7 +8,7 @@ export default function AboutComp(entry) {
         <Grow
             in='true'
             style={{ transformOrigin: '0 0 0' }}
-            {...('true' ? { timeout: entry.grow } : {})}
+            {...('true' ? { timeout: entry.grow/2 } : {})}
         >
             <div className={styles.box}>
                 <img className={styles.img} src={entry.image} alt='img corrupt' height='180px'/>

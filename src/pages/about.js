@@ -24,11 +24,11 @@ const entry = [
     {image: origami, title: 'Origami', descr: '2021: Japanese Culture Club', grow: 2000},
     {image: gym, title: 'Gym', descr: 'certified 225er', grow: 2500},
     {image: deneve, title: 'De Neve Dining Hall', descr: 'best dining hall', grow: 3000},
-    {image: japanesefilm, title: 'Japanese Films', descr: '2016: Shin Godzilla', grow: 3500},
-    {image: kfc, title: 'Korean Fried Chicken', descr: 'favorite food', grow: 4000},
+    {image: japanesefilm, title: 'Japanese Films', descr: '2016: Shin Godzilla', grow: 5500},
+    {image: kfc, title: 'Korean Fried Chicken', descr: 'favorite food', grow: 5000},
     {image: music, title: 'Music', descr: 'hiphop, kpop, jpop, rnb... ', grow: 4500},
-    {image: robotics, title: 'Robotics', descr: '2021: FTC Worlds', grow: 5000},
-    {image: ucla, title: 'UCLA and Friends', descr: '2023: The Quad', grow: 5500},
+    {image: robotics, title: 'Robotics', descr: '2021: FTC Worlds', grow: 4000},
+    {image: ucla, title: 'UCLA and Friends', descr: '2023: The Quad', grow: 3500},
 ];
 
 const About = () => (

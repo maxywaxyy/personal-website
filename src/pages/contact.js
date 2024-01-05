@@ -4,13 +4,27 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from '../styles/contact.module.css'
-import Button from '@mui/material/Button';
+import Grow from '@mui/material/Grow';
+import Slide from '@mui/material/Slide';
 
 const Contact = () => (
   <Layout>
-  <div className={styles.all}>
-  <h1 className={styles.h1}>Let's Connect!</h1>
-    <boxes className={styles.boxes}>
+    <div className={styles.all}>
+    <Slide
+      in='true'
+      style={{ transformOrigin: '0 0 0' }}
+      {...('true' ? { timeout: 500 } : {})}
+    >
+        <h1 className={styles.h1}>Let's Connect!</h1>
+    </Slide>
+
+    <Slide
+      in='true'
+      direction="up"
+      style={{ transformOrigin: '0 0 0' }}
+      {...('true' ? { timeout: 500 } : {})}
+    >
+      <boxes className={styles.boxes}>
       <box1 className={styles.box1}>
         <h2 className={styles.h2}>Contacts</h2>
         <contactinfo className={styles.contactinfo}>
@@ -26,8 +40,8 @@ const Contact = () => (
         <textArea id="message" name="message" placeholder='Your Message' rows='5' className={styles.input}></textArea>
         <button className={styles.buttons}>LETS GET STARTED</button>
       </box2>
-
-    </boxes>
+      </boxes>
+    </Slide>
   </div>
   </Layout>
 )
