@@ -12,6 +12,8 @@ const Contact = () => (
     <div className={styles.all}>
     <Slide
       in='true'
+      mountOnEnter
+      unmountOnExit
       style={{ transformOrigin: '0 0 0' }}
       {...('true' ? { timeout: 500 } : {})}
     >
@@ -21,6 +23,8 @@ const Contact = () => (
     <Slide
       in='true'
       direction="up"
+      mountOnEnter
+      unmountOnExit
       style={{ transformOrigin: '0 0 0' }}
       {...('true' ? { timeout: 500 } : {})}
     >
