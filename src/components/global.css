@@ -1,21 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
-
-:root {
-    --border-radius: 4px;
-    --line-height-loose: 1.75;
-    --line-height-normal: 1.5;
-    --line-height-dense: 1.1;
-    --space-1: 4px;
-    --space-2: 8px;
-    --space-3: 16px;
-    --space-4: 24px;
-    --space-5: 32px;
-    --space-6: 64px;
-    --size-content: 54rem;
-    --size-gutter: var(--space-5);
-    --size-gap: var(--space-6);
-  }
-
+  
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +11,7 @@ html, body {
   min-height: 100%;
 }
 body {
-  background: radial-gradient(at top left, rgba(146,43,225,1) 0%, rgba(43,9,107,1) 100%);
+  background: radial-gradient(at top left, rgb(16, 119, 192) 0%, rgb(140, 29, 181) 100%);
   background-repeat: no-repeat;
 }
 p {

@@ -1,56 +1,24 @@
-.list {
-  display: grid;
-  margin: 0;
-  /* https://css-tricks.com/responsive-layouts-fewer-media-queries/ */
-  --w: 280px;
-  --n: 2;
-  gap: var(--size-gap);
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(max(var(--w), 100%/ (var(--n) + 1) + 0.1%), 1fr)
-  );
-  margin-bottom: var(--size-gap);
-  margin-top: var(--size-gap);
+.header {
+  text-align: center;
+  transform: translateY(30%);
+}
+.hello {
+  font-size: 100px;
+  display: inline;
 }
 
-.listItem {
-  margin: 0;
+.thisIs {
+  font-size: 30px;
+  font-weight: 400;
+  display: inline;
 }
 
-.listItem::marker {
-  color: #e95800;
-}
-
-.listItem:nth-child(2)::marker {
-  color: #159bf3;
-}
-
-.listItem:nth-child(3)::marker {
-  color: #8eb814;
-}
-
-.listItem:nth-child(4)::marker {
-  color: #663399;
-}
-
-.listItemLink {
-  color: var(--color-primary);
-  font-weight: bold;
-}
-
-.listItemDescription {
-  color: var(--color-text);
-  margin-bottom: 0;
-  margin-top: var(--space-1);
+.max {
+  font-size: 250px;
 }
 
 .textCenter {
   text-align: center;
-}
-
-.intro {
-  max-width: none;
-  line-height: var(--line-height-loose);
 }
 
 .coverPhoto{
