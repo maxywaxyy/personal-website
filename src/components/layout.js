@@ -9,8 +9,8 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-//import "./layout.css"
-import "./global.css"
+//import "../styles/layout.css"
+import "../styles/global.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,9 +27,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       
-      <div>
         <main>{children}</main>  
-      </div>
     </>
   )
 }

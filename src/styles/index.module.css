@@ -5,6 +5,7 @@
 .hello {
   font-size: 100px;
   display: inline;
+  line-height: -10px;
 }
 
 .thisIs {
