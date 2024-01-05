@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Grow from '@mui/material/Grow';
 import * as styles from '../styles/about.module.css'
-import Box from '@mui/material/Box'
 
 export default function AboutComp(entry) {
   return (

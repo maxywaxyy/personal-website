@@ -1,5 +1,6 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import Grow from '@mui/material/Grow';
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -21,9 +22,24 @@ const IndexPage = () => (
       */}
 
       <p></p>
-      <p className={styles.hello}>Hello! </p>
-      <p className={styles.thisIs}>My name is </p>
-      <h1><b className={styles.max}>MAX</b></h1>
+      <Grow
+            in='true'
+            {...('true' ? { timeout: 3000 } : {})}
+        >
+          <p className={styles.hello}>Hello! </p>
+      </Grow>
+      <Grow
+            in='true'
+            {...('true' ? { timeout: 4000 } : {})}
+        >
+          <p className={styles.thisIs}>My name is </p>
+      </Grow>
+      <Grow
+            in='true'
+            {...('true' ? { timeout: 6000 } : {})}
+        >
+          <h1><b className={styles.max}>MAX</b></h1>
+      </Grow>
   
     </div>
   </Layout>  
