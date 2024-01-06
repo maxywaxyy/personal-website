@@ -29,7 +29,7 @@ const Contact = () => (
           </div>
           <div>
             <p className={styles.socialsText}>maxlee10@g.ucla.edu</p>
-            <a className={styles.socialsText} href="www.linkedin.com/in/max-lee-413434294">LinkedIn</a>
+            <a className={styles.socialsText} href='https://www.linkedin.com/in/max-lee-413434294'>LinkedIn</a>
           </div>
         </contactinfo>
       </box1>
