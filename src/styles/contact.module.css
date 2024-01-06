@@ -1,6 +1,6 @@
 .all{
     text-align: center;
-    transform: translateY(20%);
+    transform: translateY(15%);
 }
 
 .boxes {
@@ -12,6 +12,10 @@
 .h1 {
     font-size: 50px;
     margin-bottom: 20px;
+}
+
+.connect{
+    color: rgb(255, 48, 152);
 }
 
 /* left side */
@@ -74,7 +78,7 @@
 
 .buttons {
     background-color:rgb(195, 145, 236);
-    border-radius: 100px;
+    border-radius: 10px;
     border-width: 3px;
     border-color: rgba(165, 62, 255, 0.647);
 
@@ -82,7 +86,7 @@
     margin-bottom: 20px;
     padding: 10px;
 
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 900;
 }
 

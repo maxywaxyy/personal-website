@@ -16,8 +16,6 @@ import music from '../images/musicPhoto.jpg'
 import robotics from '../images/roboticsPhoto.jpg'
 import ucla from '../images/uclaPhoto.jpg'
 
-
-
 const entry = [
     {image: soccer, title: 'Soccer', descr: '2021: Adidas ID Camp Prep', grow: 1000},
     {image: snowboard, title: 'Snowboarding', descr: '2023: Mammoth Mountain', grow: 1500},

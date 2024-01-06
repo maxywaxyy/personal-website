@@ -12,7 +12,7 @@ import linkedin from '../images/linkedin.png'
 const Contact = () => (
   <Layout>
     <div className={styles.all}>
-        <h1 className={styles.h1}>Let's Connect!</h1>
+        <h1 className={styles.h1}>Let's <b className={styles.connect}>Connect!</b></h1>
     
     <boxes className={styles.boxes}>
     <Grow
@@ -37,7 +37,7 @@ const Contact = () => (
     <Grow
       in='true'
       style={{ transformOrigin: '0 0 0' }}
-      {...('true' ? { timeout: 2000 } : {})}
+      {...('true' ? { timeout: 1500 } : {})}
     >
       <box2 className={styles.box2}>
         <h3 className={styles.h3}>Message</h3>

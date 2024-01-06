@@ -1,0 +1,19 @@
+.all {
+    text-align: center;
+    margin: auto;
+    transform: translateY(15%);
+}
+
+.h1 {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.experience {
+    color: rgb(255, 48, 152);
+}
+
+.timeline {
+    font-size: 90px;
+}
