@@ -8,6 +8,7 @@ import Grow from '@mui/material/Grow';
 
 import gmail from '../images/gmail.png.webp'
 import linkedin from '../images/linkedin.png'
+import github from '../images/github.png'
 
 const Contact = () => (
   <Layout>
@@ -26,10 +27,12 @@ const Contact = () => (
           <div className={styles.socialsPics}>
             <img src={gmail} className={styles.socialsPics} alt='img corrupt' height='50px' width='50px'/>
             <img src={linkedin} className={styles.socialsPics} alt='img corrupt' height='50px' width='50px'/>
+            <img src={github} className={styles.socialsPics} alt='img corrupt' height='50px' width='50px'/>
           </div>
           <div>
             <p className={styles.socialsText}>maxlee10@g.ucla.edu</p>
             <a className={styles.socialsText} href='https://www.linkedin.com/in/max-lee-413434294'>LinkedIn</a>
+            <a className={styles.socialsText} href='https://github.com/maxywaxyy'>Github</a>
           </div>
         </contactinfo>
       </box1>
