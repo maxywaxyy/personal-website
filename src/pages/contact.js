@@ -65,9 +65,10 @@ const Contact = ({data}) => (
         <h2 className={styles.h2}>Contacts</h2>
         <contactinfo className={styles.contactinfo}>
           <div className={styles.socialsPics}>
+
             <Img fluid={data.gmailImage.childImageSharp.fluid} className={styles.socialsPics} alt='img corrupt' height='50px' width='50px'/>
             <Img fluid={data.linkedinImage.childImageSharp.fluid} className={styles.socialsPics} alt='img corrupt' height='50px' width='50px'/>
-            <Img fluid={data.githubImage.childImageSharp.fluid} className={styles.socialsPics} alt='img corrupt' height='50px' width='50px'/>
+            <img src={github} className={styles.socialsPics} alt='img corrupt' height='50px' width='50px'/>
           </div>
           <div>
             <p className={styles.socialsText}>maxlee10@g.ucla.edu</p>
