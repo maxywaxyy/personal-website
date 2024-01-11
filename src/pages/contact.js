@@ -10,7 +10,48 @@ import gmail from '../images/gmail.png.webp'
 import linkedin from '../images/linkedin.png'
 import github from '../images/github.png'
 
-const Contact = () => (
+import { graphql } from 'gatsby';
+import Img from "gatsby-image"
+
+
+export const fluidImage = graphql`
+    fragment fluidImage on File {
+        childImageSharp {
+          fluid(maxWidth: 1600) {
+            ...GatsbyImageSharpFluid
+          }
+          original {
+            width
+          }
+        }
+    }
+`;
+
+export const pageQuery = graphql`
+    query {
+      gmailImage: file(
+        relativePath: { eq: "gmail.png.webp" }
+      ) {
+        absolutePath
+        ...fluidImage
+      } 
+      linkedinImage: file(
+        relativePath: { eq: "linkedin.png" }
+      ) {
+        absolutePath
+        ...fluidImage
+      }
+      githubImage: file(
+        relativePath: { eq: "github.png" }
+      ) {
+        absolutePath
+        ...fluidImage
+      } 
+    }
+`;
+
+
+const Contact = ({data}) => (
   <Layout>
     <div className={styles.all}>
         <h1 className={styles.h1}>Let's <b className={styles.connect}>Connect!</b></h1>
@@ -25,9 +66,9 @@ const Contact = () => (
         <h2 className={styles.h2}>Contacts</h2>
         <contactinfo className={styles.contactinfo}>
           <div className={styles.socialsPics}>
-            <img src={gmail} className={styles.socialsPics} alt='img corrupt' height='50px' width='50px'/>
-            <img src={linkedin} className={styles.socialsPics} alt='img corrupt' height='50px' width='50px'/>
-            <img src={github} className={styles.socialsPics} alt='img corrupt' height='50px' width='50px'/>
+            <Img fluid={data.file.childImageSharp.fluid} className={styles.socialsPics} alt='img corrupt' height='50px' width='50px'/>
+            <Img fluid={data.file.childImageSharp.fluid} className={styles.socialsPics} alt='img corrupt' height='50px' width='50px'/>
+            <Img fluid={data.file.childImageSharp.fluid} className={styles.socialsPics} alt='img corrupt' height='50px' width='50px'/>
           </div>
           <div>
             <p className={styles.socialsText}>maxlee10@g.ucla.edu</p>
