@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
   >
 
     <Link
-      to="/"
+      to="/pp"
       style={{
         textAlign: `left`,
         textDecoration: `none`,
